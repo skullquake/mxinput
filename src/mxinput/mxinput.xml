@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mxinput.widget.mxinput" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+	<name>mxinput</name>
+	<description>mxinput</description>
+	<icon>iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAADbElEQVR4nO2cvYsaQRjG58+5Q7G44kzK664QY45AmkACqQOSOqVtzuaKXCFJYZ1OuPa6FCqYINjE0sZiSVhs55qMTNb9mNmZeecVnx886OG5q797nP0aTwgAAAAAxCFN1nI5fyDN42QsY79vEnS56v7jZEwStS5dfGwfwcgTTd3okxWNRgcAjSYCjSYCjSYCjSYCjSaCssEmie0jGDFaXJbYPoIB0URANBEQTUSarCWnxPYRDDSaiDRZy5tel0VOQnSr2YiakxL9steNkpMU/fHTb9JANET7pUj082ffg8ZEtO89oliO92+mTLT+c1Er1WPZ38l7PkQzbPRy7vfMYizHQohy0VX3TVtcdh+NRqP9YrrXgY2hI2g0EZxFo9EQbQ9EEwHRREB0hmQ7la6B6Ap26UYm26n88eundXTRq8XkYGUQXSLa5LIQRDuKvul15d/PLyqjZEN0TdG6zFazUfqzi2gOJ/6jDx2zq3ZlXIcOLqJJ54y4bAxHw4FMtlM5Gg6MRHO6OBt9jM7my7evube2jeY23SBN1nI0HHhJ8N271WJiJJpDWIlWf32TW9NG+/x4+vx4Rx06OIi2bZLp8opEu24DrESr2HwU9eft0g1b0VWNVhvMVrMh7+9urcZ+a9F6o02TbfQu3RysbDmn/Q6LetPyz1u5nB9+QalI9P3d7T5KeFH0x61E+zihxGGMzn4Dy6bRKkpkkKFDCCFWi4l0Td5yqUXbXNeLdT6677J7I4Toh1iuz+S8Rm+vreT950txSKjl+kzI1wYAAEcDt0PvunsI7DHd3YqV2H68oTfa92G0adTyZ1dtNBqNdgRjNBG66A+vX8nL8zPSW7Vu/WSQrejxxbVUCe2rNrroy/Mz8qh1v3/3Zh8b0eOLazlrd+Ss3eEtO9toyjb7aLQSzb7Vx95oIY5s6KBust7mOo1WYtXFjex9dtKV6Jhttm203mAleNbu/CeZney8RlON1XUbfdSij6nRSqySq4vOPkbts5CyAxa93XUT4oAl7wp30YVpap+FlIn23VpfopVY/Vafv8dS9HL+EP0/ghXFVHRZqH0WQnXOIlSjy2amshId8vSna/5dtT7ApMnsRAtG0wxMpwaYTpzhJlqI+NMLrKYG2EyH8+TnZOkbSsY8Dg9gsgwAAAAAAAAAAE88ASnJNJUYcKNxAAAAAElFTkSuQmCC</icon>
+	<properties>
+		<property key="inputValue" type="attribute">
+			<caption>Attribute</caption>
+			<category>Settings</category>
+			<description>The input attribute of the widget.</description>
+			<attributeTypes>
+				<attributeType name="String" />
+			</attributeTypes>
+		</property>
+		<property key="mfToExecute" type="microflow" required="true" defaultValue="">
+			<caption>Microflow</caption>
+			<category>Settings</category>
+			<description>The microflow to execute upon hitting the enter key</description>
+			<returnType type="Boolean" />
+		</property>
+		<property key="async" type="boolean" defaultValue="false">
+			<caption>Asynchronous</caption>
+			<category>Settings</category>	
+			<description>Call microflow asynchronously</description>	
+		</property>
+		 <property key="progressBar" type="boolean" defaultValue="false">
+			 <caption>Show progress</caption>
+			 <category>Settings</category>	
+			 <description>Show a progress bar</description>	
+		</property>
+		 <property key="progressMsg" type="string" defaultValue="Loading">
+			<caption>Progress message</caption>
+			 <category>Settings</category>	
+			 <description>Progress bar message (only visible if 'Show progress' is true)</description>	
+		</property>
+		<property key="placeholder" type="string" required="false" defaultValue="">
+			<caption>Placeholder text</caption>
+			<category>Settings</category>
+			<description>Placeholder for when the input field is empty</description>
+		</property>
+	</properties>
+</widget>
